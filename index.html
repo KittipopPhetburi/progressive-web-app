@@ -6,7 +6,7 @@
     <meta name="theme-color" content="#4285f4">
     <title>My PWA</title>
     <link rel="manifest" href="manifest.json">
-    <link rel="apple-touch-icon" href="icon-192x192.png">
+        <link rel="apple-touch-icon" href="icon-192.png">
     <style>
         body { 
             font-family: Arial, sans-serif;
@@ -51,7 +51,7 @@
 
     <script>
         if ('serviceWorker' in navigator) {
-            navigator.serviceWorker.register('sw.js')
+            navigator.serviceWorker.register('service-worker.js')
                 .then(registration => console.log('ServiceWorker registered'))
                 .catch(error => console.log('ServiceWorker error:', error));
         }
